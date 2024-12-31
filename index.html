@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy New Year 2025</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #111;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #ff4b5c;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 4em;
+            color: #fff;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 2em;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 40px;
+            background-color: #333;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .image-gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #ff4b5c;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .countdown {
+            font-size: 3em;
+            margin-top: 20px;
+        }
+
+        .celebration-message {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #ffdd00;
+        }
+
+        .footer-text {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+
+
+
+    <header>
+        <h1>Happy New Year 2025!</h1>
+        <h2>Ananya, I Hope this year gives you all the hapiness, comfort and sucess youv'e been searching for. I hope that this whole year you wouldn't feel the need to fake a smile and you could genuinely get to laugh and smile with the beautiful 'colgate teeth' of yours </h2>
+        <h3> why not start some music on the background before the 2024 recap, and especially filled with a lot of genres music you love. Why not give it a listen again annuse</h3>
+       <body>
+<audio controls autoplay muted loop>                               
+<source src="lover.mp3">
+</audio>
+</body> 
+<body>
+<audio controls autoplay muted loop>
+<source src="thuli thuli.mp3">
+</audio>
+</body> 
+<body>
+<audio controls autoplay muted loop>
+<source src="kyon.mp3">
+</audio>
+</body>
+<body>
+<audio controls autoplay muted loop>  
+<source src="golden.mp3">
+</audio>
+</body> 
+</header>
+
+    <section>
+        <div class="content-container">
+            <div class="countdown" id="countdown-timer">
+                <p>Countdown to 2025:</p>
+                <span id="time"></span>
+            </div>
+            <div class="celebration-message">
+                <p>before stepping into the new year lets just go through the various moments i captured of you.. lets witness the various forms of Ananya in 2024</p>
+            </div>
+
+            <div class="image-gallery">
+                <A HREF="87.jpg">
+                <img HEIGHT=50 WIDTH=50 src="87.jpg"></A>
+                <A HREF="88.jpg">
+                <img HEIGHT=50 WIDTH=50 src="88.jpg"></A>
+                <A HREF="89.jpg">
+                <img HEIGHT=50 WIDTH=50 src="89.jpg"></A>
+                <A HREF="90.jpg">
+                <img HEIGHT=50 WIDTH=50 src="90.jpg"></A>
+                <A HREF="91.jpg">
+                <img HEIGHT=50 WIDTH=50 src="91.jpg"></A>
+                <A HREF="92.mp4">
+                <video HEIGHT=250 WIDTH=250 src="92.mp4"></A>
+               
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-text">
+            <p>&copy; 2024-2025 | Happy New Year!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        const countdownDate = new Date("Jan 1, 2025 00:00:00").getTime();
+        const countdownFunction = setInterval(function () {
+            const now = new Date("Dec 31,2024 21:27:35").getTime();
+            const distance = countdownDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("time").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("time").innerHTML = "Happy New Year 2025!";
+            }
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
